@@ -3,7 +3,7 @@
 https://en.cppreference.com/w/
 https://cplusplus.com/
 
-# C++ Module 03 - SUBJECT
+# C++ Module 04 - SUBJECT
 
 ![Image](img/en.subject_page-0001.jpg)
 ![Image](img/en.subject_page-0002.jpg)
@@ -17,4 +17,7 @@ https://cplusplus.com/
 ![Image](img/en.subject_page-0010.jpg)
 ![Image](img/en.subject_page-0011.jpg)
 ![Image](img/en.subject_page-0012.jpg)
+![Image](img/en.subject_page-0013.jpg)
+![Image](img/en.subject_page-0014.jpg)
+
 
