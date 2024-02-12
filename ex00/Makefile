@@ -1,13 +1,13 @@
-NAME		:= interface
+NAME		:= animal
 
 #SOURCES_____________________________________________________________
 
-SRCS		:=	main.cpp			\
-				Ice.cpp				\
-				Cure.cpp			\
-				AMateria.cpp		\
-				Character.cpp		\
-				IMateriaSource.cpp
+SRCS		:=	main.cpp		\
+				Animal.cpp		\
+				Dog.cpp			\
+				Cat.cpp			\
+				WrongAnimal.cpp \
+				WrongCat.cpp
 
 #OBJECT______________________________________________________________
 

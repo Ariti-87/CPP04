@@ -1,13 +1,14 @@
-NAME		:= interface
+NAME		:= abstract
 
 #SOURCES_____________________________________________________________
 
-SRCS		:=	main.cpp			\
-				Ice.cpp				\
-				Cure.cpp			\
-				AMateria.cpp		\
-				Character.cpp		\
-				IMateriaSource.cpp
+SRCS		:=	main.cpp		\
+				Animal.cpp		\
+				Dog.cpp			\
+				Cat.cpp			\
+				WrongAnimal.cpp	\
+				WrongCat.cpp	\
+				Brain.cpp
 
 #OBJECT______________________________________________________________
 
@@ -67,3 +68,4 @@ re: fclean all
 
 .PHONY: all clean fclean re
 .SILENT:
+

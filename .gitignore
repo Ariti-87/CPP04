@@ -23,9 +23,9 @@
 *.gch
 
 # Exec
-claptrap
-scavtrap
-fragtrap
-diamondtrap
+animal
+brain
+abstract
+interface
 .nfs*
 
