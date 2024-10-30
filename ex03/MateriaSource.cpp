@@ -1,8 +1,8 @@
-#include "IMateriaSource.hpp"
+#include "MateriaSource.hpp"
 
 MateriaSource::MateriaSource()
 {
-	std::cout << MAGENTA << "MateriaSource"<< RESET << " has been created" << std::endl;
+	std::cout << MAGENTA << "Default MateriaSource"<< RESET << " has been created" << std::endl;
 	for (int i = 0; i < 4; i++)
 		this->_learnedMaterias[i] = NULL;
 }
@@ -10,7 +10,11 @@ MateriaSource::MateriaSource()
 MateriaSource::MateriaSource(MateriaSource const& toCopy)
 {
 	for (int i = 0; i < 4; i++)
+		this->_learnedMaterias[i] = NULL;
+	for (int i = 0; i < 4; i++)
 	{
+		if (this->_learnedMaterias[i])
+			delete _learnedMaterias[i];
 		if (toCopy._learnedMaterias[i])
 			this->_learnedMaterias[i] = toCopy._learnedMaterias[i]->clone();
 		else
@@ -36,9 +40,6 @@ MateriaSource & MateriaSource::operator=(MateriaSource const& toCopy)
 		{
 			if (this->_learnedMaterias[i])
 				delete this->_learnedMaterias[i];
-		}
-		for (int i = 0; i < 4; i++)
-		{
 			if (toCopy._learnedMaterias[i])
 				this->_learnedMaterias[i] = toCopy._learnedMaterias[i]->clone();
 			else
@@ -54,7 +55,7 @@ void MateriaSource::learnMateria(AMateria* m)
 	{
 		if(!_learnedMaterias[i])
 		{
-			_learnedMaterias[i] = m->clone();
+			_learnedMaterias[i] = m;
 			break;
 		}
 	}

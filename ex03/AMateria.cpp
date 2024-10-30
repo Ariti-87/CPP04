@@ -2,12 +2,13 @@
 
 AMateria::AMateria()
 {
-	std::cout << BLUE << "AMateria" << RESET << " has been created" << std::endl;
-
+	std::cout << BLUE << "Default AMateria" << RESET << " has been created" << std::endl;
 }
 
 AMateria::AMateria(std::string const& type) : _type(type)
-{}
+{
+	std::cout << BLUE << "AMateria" << RESET << " has been created" << std::endl;
+}
 
 AMateria::AMateria(AMateria const& toCopy)
 {
@@ -30,14 +31,10 @@ AMateria & AMateria::operator=(AMateria const& toCopy)
 
 std::string const & AMateria::getType() const
 {
-	return _type;
+	return this->_type;
 }
-
-// AMateria* AMateria::clone() const
-// {}
 
 void AMateria::use(ICharacter& target)
 {
-	(void) target;
-	// std::cout << "AMateria " << this->_type << " used on " << target.getName() << std::endl;
+	std::cout << "AMateria " << this->_type << " used on " << target.getName() << std::endl;
 }

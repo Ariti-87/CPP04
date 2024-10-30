@@ -2,11 +2,12 @@
 
 Cure::Cure() : AMateria("cure")
 {
-	std::cout << GREEN << "Cure" << RESET << " has been created" << std::endl;
+	std::cout << GREEN << "Default Cure" << RESET << " has been created" << std::endl;
 }
 
 Cure::Cure(Cure const& toCopy) : AMateria::AMateria(toCopy)
 {
+	std::cout << GREEN << "Cure" << RESET << " has been created" << std::endl;
 }
 
 Cure::~Cure()

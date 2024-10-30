@@ -28,8 +28,8 @@ class Animal
 	virtual void makeSound() const;
 
 	protected:
-
 	std::string type;
+
 };
 
 #endif

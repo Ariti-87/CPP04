@@ -14,11 +14,7 @@
 #define MAGENTA "\033[35m"
 #define RESET "\033[0m"
 
-
-#include "AMateria.hpp"
-
-// class AMateria;
-
+class AMateria;
 
 class ICharacter
 {

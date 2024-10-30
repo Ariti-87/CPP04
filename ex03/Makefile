@@ -7,7 +7,7 @@ SRCS		:=	main.cpp			\
 				Cure.cpp			\
 				AMateria.cpp		\
 				Character.cpp		\
-				IMateriaSource.cpp
+				MateriaSource.cpp
 
 #OBJECT______________________________________________________________
 

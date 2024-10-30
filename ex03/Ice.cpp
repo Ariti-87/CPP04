@@ -2,11 +2,12 @@
 
 Ice::Ice() : AMateria("ice")
 {
-	std::cout << CYAN << "Ice" << RESET << " has been created" << std::endl;
+	std::cout << CYAN << "Default Ice" << RESET << " has been created" << std::endl;
 }
 
 Ice::Ice(Ice const& toCopy) : AMateria::AMateria(toCopy)
 {
+	std::cout << CYAN << "Ice" << RESET << " has been created" << std::endl;
 }
 
 Ice::~Ice()
